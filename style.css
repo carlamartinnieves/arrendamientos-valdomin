@@ -1,0 +1,464 @@
+/* ======== ESTILO GENERAL ======== */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: #fffdf7;
+}
+
+/* ======== NAVBAR ELEGANTE ======== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0.8rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    color: #333;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    max-width: 250px;
+}
+
+.logo-text div:first-child {
+    font-weight: 600;
+}
+
+.logo-text div:last-child {
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.85;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0.8rem 2rem 0.8rem 1rem;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6c8c3f;
+}
+
+nav ul li .btn-contact {
+    background: #6c8c3f;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+nav ul li .btn-contact:hover {
+    background: #5a7432;
+    transform: translateY(-1px);
+}
+
+/* ======== HEADER HERO ======== */
+header {
+    background: url('images/atardecermaquina.JPG') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    margin-top: 60px;
+}
+
+header .overlay {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1.7rem;
+  background-color: rgba(0, 90, 0, 0.6); /* verde translúcido */
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+
+ }
+
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+}
+
+/* ======== SECCIONES ======== */
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #47682c;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e8e2d8;
+    padding-bottom: 0.5rem;
+}
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4b6735;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e0dbd1;
+    padding: 1.5rem;
+    border-radius: 12px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+/* ======== GALERÍA ======== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* ======== FOOTER ======== */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        display: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .logo-text {
+        font-size: 0.7rem;
+        max-width: 180px;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+}
+
+/* ======== ENLACES EXTRA ======== */
+a {
+    color: #47682c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* ======== NUEVA SECCIÓN: DATOS CLAVE ======== */
+#datos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#datos li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    border-left: 4px solid #c7d5b6;
+    padding-left: 0.8rem;
+    background: #f7f7f3;
+    border-radius: 4px;
+}
+
+/* ======== VISIÓN / FRASE DESTACADA ======== */
+#vision blockquote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    background-color: #f0f4e4;
+    border-left: 4px solid #88a766;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    color: #3a3a3a;
+}
+
+/* ======== FORMULARIO DE CONTACTO ======== */
+form {
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: 600;
+    color: #47682c;
+}
+
+form input,
+form textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #6c8c3f;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #5a7432;
+}
+
+/* ======== MAPA ======== */
+.mapa {
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.icono-whatsapp {
+  width: 30px;
+  height: 30px;
+}
+.whatsapp-destacado {
+  text-align: center;
+  background-color: #eafaf0;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  border: 1px solid #c5e6d0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.whatsapp-destacado h3 {
+  font-size: 1.3rem;
+  color: #075e54;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-whatsapp-grande {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  gap: 0.8rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-whatsapp-grande:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+}
+
+.icono-whatsapp-grande {
+  width: 36px;
+  height: 36px;
+}
+.equipo-galeria {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.equipo-galeria img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+/* LIGHTBOX mejorado */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  padding: 0 1rem;
+  user-select: none;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.lightbox-nav.prev {
+  left: 10px;
+}
+
+.lightbox-nav.next {
+  right: 10px;
+}
