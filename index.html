@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agrícola Nuestra Señora de Ciguiñuela S.L.</title>
+  <meta name="description" content="Empresa agrícola en Fuente el Saz, Madrid. Producción de cereales, arrendamiento de fincas y servicios agrícolas sostenibles.">
+  <meta name="keywords" content="agricultura, cereales, servicios agrícolas, fuente el saz, Valdomín, Ciguiñuela">
+  <meta name="author" content="Agrícola Nuestra Señora de Ciguiñuela S.L.">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo-container">
+      <a href="#inicio">
+        <img src="images/LOGO.bmp" alt="Logo Ciguiñuela" class="logo-img" />
+      </a>
+      <div style="font-family: Lora, serif; font-weight: bold; font-size: 14px; color: #004406;">
+        <div>Agrícola Nuestra Señora de Ciguiñuela S.L.</div>
+        <div>Arrendamientos Valdomín S.L.</div>
+      </div>
+    </div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#quienes">Quiénes somos</a></li>
+      <li><a href="#cultivos">Cultivos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto" class="btn-contact">Contactar</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio">
+    <div class="overlay">
+      <h1>Agrícola Nuestra Señora de Ciguiñuela S.L.</h1>
+      <h1>Arrendamientos Valdomín S.L.</h1>
+      <p>Servicios de cosecha en casi todo España</p>
+    </div>
+  </header>
+
+  <section id="quienes">
+    <h2>Quiénes somos</h2>
+    <p>Somos dos empresas agrícolas ubicadas en Fuente el Saz de Jarama, Madrid, dedicadas a la producción responsable de cereales, arrendamiento de fincas y servicios de apoyo al campo. Combinamos tradición y tecnología para ofrecer productos de calidad y cuidar nuestro entorno.</p>
+    <h3>Nuestro equipo</h3>
+    <div class="equipo-galeria">
+      <img src="images/trabajador1.jpg" alt="Trabajador 1">
+      <img src="images/trabajador2.jpg" alt="Trabajador 2">
+      <img src="images/sergei.jpg" alt="Trabajador 3">
+      <img src="images/jose.JPG" alt="jose">
+    </div>
+  </section>
+
+  <section id="cultivos">
+    <h2>Nuestros cultivos y servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🌾 Cereales</h3>
+        <p>Producción de trigo y cebada bajo prácticas sostenibles.</p>
+      </div>
+      <div class="card">
+        <h3>🚜 Servicios agrícolas</h3>
+        <p>Laboreo, siembra y cosecha para terceros con maquinaria moderna.</p>
+      </div>
+      <div class="card">
+        <h3>🏡 Arrendamiento de fincas</h3>
+        <p>Gestión y alquiler de terrenos rústicos para uso agrícola.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery-grid">
+      <img src="images/mohaHorizontal.jpg" alt="Campo de trigo en crecimiento">
+      <img src="images/tractorHorizontal.jpg" alt="Tractor trabajando el terreno">
+      <img src="images/descargando.JPG" alt="Descarga de grano en silo">
+      <img src="images/dentromaquina.JPG" alt="Interior de la maquinaria en uso">
+      <img src="images/maquina por detras.jpg" alt="maquina por detras">
+      <img src="images/macFrente.jpg" alt="maquina por delante">
+      <img src="images/maqLado.jpg" alt="Imaquina de lado">
+      <img src="images/maquina.JPG" alt="cosechaCampo">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:a.valdomin@gmail.com">a.valdomin@gmail.com</a> | Tel: <a href="tel:+34670417995">+34 670 41 79 95</a></p>
+    <p>Dirección: Calle Talamanca, 14 · Fuente el Saz, Comunidad de Madrid</p>
+    <p>Atención directa por: <strong>Juan Luis Rodríguez Rodríguez</strong></p>
+
+    <form action="mailto:a.valdomin@gmail.com" method="post" enctype="text/plain">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="whatsapp-destacado">
+      <h3>¿Tienes dudas? Escríbenos directamente por WhatsApp</h3>
+      <a href="https://wa.me/346670417995" target="_blank" class="btn-whatsapp-grande">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp" class="icono-whatsapp-grande" />
+        Chatear por WhatsApp
+      </a>
+    </div>
+
+    <div class="mapa">
+      <iframe src="https://www.google.com/maps?q=calle+Talamanca+14,+Fuente+el+Saz,+Madrid&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Lightbox (oculto inicialmente) -->
+  <!-- Lightbox mejorado -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox" onclick="closeLightbox()">×</span>
+  <img id="lightbox-img" src="" alt="Imagen ampliada">
+  <span class="lightbox-nav prev" onclick="changeImage(-1)">❮</span>
+  <span class="lightbox-nav next" onclick="changeImage(1)">❯</span>
+</div>
+
+
+  <footer>
+    <p>&copy; 2025 Agrícola Nuestra Señora de Ciguiñuela S.L. · Arrendamientos Valdomín S.L.</p>
+  </footer>
+
+  <!-- JavaScript para Lightbox -->
+  <script>
+  const galleryImages = Array.from(document.querySelectorAll('.gallery-grid img'));
+  let currentIndex = 0;
+
+  function openLightbox(imgElement) {
+    currentIndex = galleryImages.indexOf(imgElement);
+    showImage();
+    document.getElementById('lightbox').style.display = 'flex';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+  }
+
+  function showImage() {
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = galleryImages[currentIndex].src;
+  }
+
+  function changeImage(step) {
+    currentIndex = (currentIndex + step + galleryImages.length) % galleryImages.length;
+    showImage();
+  }
+
+  galleryImages.forEach(img => {
+    img.addEventListener('click', () => openLightbox(img));
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (document.getElementById('lightbox').style.display === 'flex') {
+      if (e.key === 'ArrowRight') changeImage(1);
+      if (e.key === 'ArrowLeft') changeImage(-1);
+      if (e.key === 'Escape') closeLightbox();
+    }
+  });
+  </script>
+
+</body>
+</html>
